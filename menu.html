@@ -27,11 +27,17 @@
             justify-content: center;
         }
         .nav-logo {
-            background-color: #911919;
+            padding: 20px;
             color: white;
-            padding: 15px;
             text-align: center;
             margin: 0;
+        }
+
+        .nav-logo img:hover {
+            opacity: 0.8;
+            transform: scale(1.1);
+            cursor: pointer;
+            transition: all 1s ease;
         }
 
         .nav-list {
@@ -47,9 +53,14 @@
             display: flex;
             align-items: center;
             position: relative;
+            border: 3px solid transparent;
         }
         .nav-item:hover {
             background-color: #ddd;
+            cursor: pointer;
+            border-top: 3px solid #5b141d;
+            border-bottom: 3px solid #5b141d;
+            transition: all 1s ease;
         }
 
         .nav-dropdown-content {
@@ -85,7 +96,7 @@
         .nav-link {
             font-weight: bold;
             text-decoration: none;
-            color: #911919;
+            color: #5b141d;
         }
     </style>
 </head>
@@ -93,10 +104,10 @@
 <body>
     <div class="nav-menu">
         <div class="nav-row">
-            <h1 class="nav-logo">LOGO</h1>
+            <h1 class="nav-logo"><a href="/index.html"><img style="height: 80px; width: 80px;" src="/assets/images/logo_cophucviet.png" alt=""></a></h1>
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="/index.html" class="nav-link">Trang chủ</a></li>
-                    <li class="nav-item"><a href="/about.html" class="nav-link">Giới thiệu</a></li>
+                    <a href="/index.html" class="nav-link"><li class="nav-item">Trang chủ</li></a>
+                    <a href="/about.html" class="nav-link"><li class="nav-item">Giới thiệu</li></a>
                     <li class="nav-item nav-dropdown">
                         <a href="#services" class="nav-link">Bộ sưu tập</a>
                         <div class="nav-dropdown-content">
@@ -105,8 +116,8 @@
                             <a href="/gallery_dacthu.html" class="nav-link">Trang phục đặc thù</a>
                         </div>
                     </li>
-                    <li class="nav-item"><a href="/news.html" class="nav-link">Tin tức & sự kiện</a></li>
-                    <li class="nav-item"><a href="/contact.html" class="nav-link">Liên hệ</a></li>
+                    <a href="/news.html" class="nav-link"><li class="nav-item">Tin tức & sự kiện</li></a>
+                    <a href="/contact.html" class="nav-link"><li class="nav-item">Liên hệ</li></a>
                 </ul>
         </div>
     </div>
