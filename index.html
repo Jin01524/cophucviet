@@ -9,8 +9,8 @@
         body {
             margin: 0;
             padding: 0;
-            display: flex;
             flex-direction: column;
+            display: flex;
         }
 
         .content {
@@ -97,14 +97,11 @@
             transition: all 1s ease;
         }
 
-        .discovery-container a:hover .image-op {
-            visibility: visible;
-        }
-
-        .image-op {
-            margin-top: 20px;
-            text-align: center;
-            visibility: hidden;
+        .image-content img {
+            padding-left: 25%;
+            margin-top: 10px;
+            width: 50%;
+            height: auto;
         }
     </style>
 </head>
@@ -127,7 +124,7 @@
             <table>
                 <tr>
                     <td style="background-color: #5b141d; color: white;">
-                        <h1 style="background-color: #5b141d; color: white; ">Khám Phá</h1>
+                        <h1>Khám Phá</h1>
                     </td>
                     <td><a href="/gallery_cungdinh.html">
                             <h3 class="h3">Cổ phục Cung Đình</h3>
@@ -142,9 +139,13 @@
             </table>
 
         </div>
-        <div class="image-op">
-            <img src="assets/images/collection.jpg" alt="Cổ phục Việt"
-                style="width: 100%; height: auto; border-radius: 10px; margin-top: 20px;">
+        <p style="font-style: italic; width: 50%; padding-left: 25%; font-size: 25px;">Trong vòng bốn đến năm năm trở lại đây, việc phục dựng các trang phục
+            của người Việt xưa đang trở thành một xu hướng được đông đảo người trẻ hưởng ứng. Đây là thành quả từ nỗ lực
+            bảo tồn, quảng bá cổ phục Việt của các nhà thiết kế, thương hiệu, và tập thể mong muốn lưu giữ những giá trị
+            lịch sử, truyền thống của nước ta.</p>
+        <div class="image-content">
+            <img src="assets/images/19h.jpg" alt="Cổ phục Việt">
+            <p style="font-style: italic; padding-left: 25%; width: 50%; font-size: 15px; text-align: center;">Bên trong phòng trưng bày của Great Vietnam tại Hà Nội.</p>
         </div>
     </div>
 
