@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cổ phục Việt</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-menu"></div>
+
+    <div class="content">
+        <p>XIN CHÀO</p>
+    </div>
+
+    <div class="footer"></div>
+</body>
+
+<script>
+    fetch("menu.html")
+    .then(response => response.text())
+    .then(data => {
+        document.querySelector(".nav-menu").innerHTML = data;
+    });
+
+    fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+        document.querySelector(".footer").innerHTML = data;
+    });
+</script>
+
+</html>
