@@ -14,7 +14,7 @@
         }
 
         .content {
-           
+           background: #f4e2ce;
         }
 
         .trp {
@@ -28,11 +28,14 @@
             width: 600px;
         }
 
-        .ha1, .ha2, .ha3 {
+        .ha1, .ha2, .ha3, .ha4, .ha5, .ha6, .ha7, .ha8, .ha9 {
             position: relative;
             display: inline-block;
             margin-left: 20px;
             overflow: hidden;
+            width: 600px;
+            margin-bottom: 20px;
+            border-radius: 10px;
         }
 
         /* .ha1 img {
@@ -52,15 +55,79 @@
             font-size: 25px;
         }
 
-        .ha1 img:hover, .ha2 img:hover, .ha3 img:hover {
+        .ha1 img:hover, .ha2 img:hover, .ha3 img:hover, .ha4 img:hover, .ha5 img:hover,.ha6 img:hover, .ha7 img:hover, .ha8 img:hover, .ha9 img:hover {
             transform: scale(1.04);
            
             
         }
 
-        .ha1 img, .ha2 img, .ha3 img {
+        .ha1 img, .ha2 img, .ha3 img, .ha4 img, .ha5 img, .ha6 img, .ha7 img, .ha8 img, .ha9 img {
             cursor: pointer; 
-            transition: transform 0.4s ease-in-out ;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .khungsld {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .sld {
+            height: 400px;
+            width: 800px;
+            display: flex;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .asl:hover {
+            animation-play-state: paused;
+        }
+
+        .asl{
+            display: flex;
+            width: 500%;
+            animation: slideShow 10s infinite;
+            cursor: pointer;   
+        }
+
+        .asl img{
+            width: 800px;
+            transition: transform 0.2s ease-in-out;
+            object-fit: cover;
+        }
+
+        .asl img:hover {
+            transform: scale(1.04);
+        }
+
+        @keyframes slideShow{
+            20%{
+                margin-left: 0;
+            }
+            30%{
+                margin-left: -100%;
+            }
+            40%{
+                margin-left: -100%;
+            }
+            50%{
+                margin-left: -200%;
+            }
+            60%{
+                margin-left: -200%;
+            }
+            70%{
+                margin-left: -300%;
+            }
+            80%{
+                margin-left: -300%;
+            }
+            90%{
+                margin-left: -400%;
+            }
+            100%{
+                margin-left: -400%;
+            }
         }
     </style>
 </head>
@@ -71,26 +138,71 @@
     <div class="content">
 
         <div class="trp">
-            <h1>Y phục dân gian</h1>
+            <h1 style="margin-top: 0px; padding: 15px 0; background-color: #5b141d; color: #f2f2f2;">Các loại cổ phục Việt</h1>
         </div>
+            
+        <div class="khungsld">
+            <div class="sld">
+                <div class="asl">
+                    <img src="assets/images/01h.jpg" alt="">
+                    <img src="assets/images/z6891297970098_5975fe8be59c4fa254db9f2850d953f1.jpg" alt="">
+                    <img src="assets/images/z6891297970099_a1a41a375b82a0b23d7e230aa2db9e79.jpg" alt="">
+                    <img src="assets/images/non-quai-thao-di-san-van-hoa-cua-dan-toc-viet-nam.jpg" alt="">
+                    <img src="assets/images/27c31ecd68350f4d6c04b42632dad55f.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        
         
         <div class="ha">
             <div class="ha1">
                 <a href="aotuthan.html">
-                    <img src="assets/images/e2b55546b7dc2279cfd8d677f36fcbc6.jpg" alt="" width="600">
+                    <img src="assets/images/e2b55546b7dc2279cfd8d677f36fcbc6.jpg" alt="">
                     <div class="cap"><p>Áo Tứ Thân</p></div>
                 </a>
             </div>
 
             <div class="ha2">
-                 <img src="assets/images/e9e0ebf7e86242cb7391f5564c689588.jpg" alt="" width="600">
+                 <img src="assets/images/e9e0ebf7e86242cb7391f5564c689588.jpg" alt="">
                 <div class="cap"><p>Áo Yếm</p></div>
             </div>
 
             <div class="ha3">
-                <img src="assets/images/6b7b7697e74ba013c79fa5f5f49bbba2.jpg" alt="" width="600">
+                <img src="assets/images/6b7b7697e74ba013c79fa5f5f49bbba2.jpg" alt="">
                 <div class="cap"><p>Áo Ngũ Thân Tay Chẽn</p></div>
             </div>
+
+            <div class="ha4">
+                <img src="assets/images/b274131f798f8e56e3be956e775af5d3.jpg" alt="">
+                <div class="cap"><p>Áo Tấc</p></div>
+            </div>
+
+            <div class="ha5">
+                <img src="assets/images/6225a8d4e5efac517c2c236c3e17f69d.jpg" alt="">
+                <div class="cap"><p>Nhật Binh</p></div>
+            </div>
+
+            <div class="ha6">
+                <img src="assets/images/d79157934e936bc9917005135f6123bd.jpg" alt="">
+                <div class="cap"><p>Phượng Bào</p></div>
+            </div>
+
+            <div class="ha7">
+                <img src="assets/images/d75d98f0bacc9fdfdd72f5f813edbbb4.jpg" alt="">
+                <div class="cap"><p>Áo Quan</p></div>
+            </div>
+
+            <div class="ha8">
+                <img src="assets/images/0e687deef412f7be2097348a8c085794.jpg" alt="">
+                <div class="cap"><p>Áo Giao Lĩnh</p></div>
+            </div>
+
+            <div class="ha9">
+                <img src="assets/images/5802b2cabeb676adcb924b4c1e20d1bf.jpg" alt="">
+                <div class="cap"><p>Áo Viên Lĩnh</p></div>
+            </div>
+
+            
         </div>  
     </div>
 
