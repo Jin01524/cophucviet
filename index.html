@@ -9,9 +9,8 @@
         body {
             margin: 0;
             padding: 0;
-            min-height: 100vh;
-            display: flex;
             flex-direction: column;
+            display: flex;
         }
 
         .content {
@@ -48,15 +47,61 @@
         .wellcome-container {
             text-align: center;
             color: white;
-            background-color: #5b141d   ;
+            background-color: #5b141d;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
+
         .discovery-container {
             color: #5b141d;
             background-color: white;
             border: 2px solid #5b141d;
-            padding: 50px;
+            display: flex;
+        }
+
+        .discovery-container table {
+            width: 100%;
+            height: 200px;
+            text-align: center;
+            border: 2px solid #5b141d;
+            text-decoration: none;
+        }
+
+        .discovery-container td {
+            vertical-align: middle;
+            width: 25%;
+            height: 200px;
+        }
+
+        .discovery-container a {
+            text-decoration: none;
+            color: #5b141d;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .h3 {
+            margin: 0;
+            height: 100%;
+            padding: 0 50px 0 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .discovery-container a:hover h3 {
+            color: white;
+            background-color: #5b141d;
+            transition: all 1s ease;
+        }
+
+        .image-content img {
+            padding-left: 25%;
+            margin-top: 10px;
+            width: 50%;
+            height: auto;
         }
     </style>
 </head>
@@ -76,8 +121,31 @@
         </div>
 
         <div class="discovery-container">
-            <h2>Khám Phá</h2>
-            <p>Đắm chìm trong vẻ đẹp của các bộ trang phục truyền thống.</p>    
+            <table>
+                <tr>
+                    <td style="background-color: #5b141d; color: white;">
+                        <h1>Khám Phá</h1>
+                    </td>
+                    <td><a href="/gallery_cungdinh.html">
+                            <h3 class="h3">Cổ phục Cung Đình</h3>
+                        </a></td>
+                    <td><a href="/gallery_thuongdan.html">
+                            <h3 class="h3">Cổ phục Thường Dân</h3>
+                        </a></td>
+                    <td><a href="/gallery_nghile.html">
+                            <h3 class="h3">Cổ phục Nghi Lễ</h3>
+                        </a></td>
+                </tr>
+            </table>
+
+        </div>
+        <p style="font-style: italic; width: 50%; padding-left: 25%; font-size: 25px;">Trong vòng bốn đến năm năm trở lại đây, việc phục dựng các trang phục
+            của người Việt xưa đang trở thành một xu hướng được đông đảo người trẻ hưởng ứng. Đây là thành quả từ nỗ lực
+            bảo tồn, quảng bá cổ phục Việt của các nhà thiết kế, thương hiệu, và tập thể mong muốn lưu giữ những giá trị
+            lịch sử, truyền thống của nước ta.</p>
+        <div class="image-content">
+            <img src="assets/images/19h.jpg" alt="Cổ phục Việt">
+            <p style="font-style: italic; padding-left: 25%; width: 50%; font-size: 15px; text-align: center;">Bên trong phòng trưng bày của Great Vietnam tại Hà Nội.</p>
         </div>
     </div>
 
