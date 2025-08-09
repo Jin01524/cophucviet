@@ -6,27 +6,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cổ phục Việt: Giới thiệu</title>
     <link rel="stylesheet" href="menu.html">
+
+    <style>
+        .title {
+            text-align: center;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            background-color: #5b141d;
+        }
+
+        .border-title {
+            border: 5px solid #efebdf;
+        }
+
+        .title h1 {
+            color: #efebdf;
+        }
+
+        .title img {
+            width: 15%;
+            padding: 20px;
+            height: auto;
+            transition: all 1s ease;
+        }
+
+        .title img:hover {
+            opacity: 0.8;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .about-slogan {
+            margin: 30px 100px;
+            font-size: 24px;
+            color: #5b141d;
+        }
+
+        .about-content {
+            margin: 0px 100px 20px 100px;
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .about-content img {
+            width: 70%;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+    </style>
 </head>
 
 <body>
     <div class="menu"></div>
     <div class="content">
-        <h1>Giới thiệu</h1>
+        <div class="title">
+            <div class="border-title">
+                <h1>VỀ CHÚNG TÔI</h1>
+                <a href="/index.html"><img src="/assets/images/logo_cophucviet.jpg" alt="logo"></a>
+            </div>
+        </div>
+
+        <div class="about-slogan">
+            <h1 class="about-slogan">Giữ hồn Việt trong từng nếp vải</h1>
+        </div>
+        <div class="about-content">
+            <p class="about-content">Trang web Cổ phục Việt được xây dựng với niềm đam mê và trân trọng dành cho trang
+                phục truyền thống. Chúng
+                tôi mong muốn truyền tải vẻ đẹp tinh tế của cổ phục qua các triều đại, giúp nhiều người biết đến và cảm
+                nhận được chiềusâu lịch sử và hồn cốt dân tộc.</p>
+            <img src="/assets/images/09h.jpg" alt="imgs">
+            <p style="font-size: 16px; font-style: italic; text-align: center;">Một số loại trang phục dành cho phụ nữ
+                trong cung đình - Great Vietnam</p>
+        </div>
+
+        <div class="about-slogan">
+            <h1 class="about-slogan">Lan tỏa - Kết nối - Thế hệ trẻ</h1>
+        </div>
+        <div class="about-content">
+            <p class="about-content">Chúng tôi không chỉ dừng lại ở việc giới thiệu trang phục, mà còn mong muốn kết nối
+                những người yêu thích cổ phục,tạo ra một cộng đồng nơi mọi người có thể chia sẻ, học hỏi và cùng nhau
+                gìn giữ giá trị văn hóa truyền
+                thống. Đối tượng mà chúng tôi hướng đến chính là giới trẻ – những người sẽ tiếp nối và làm sống lại giá
+                trị văn hóa Việt trong đời sống hiện đại. Thông qua hình ảnh, bài viết, và tư liệu chọn lọc, cổ phục
+                không chỉ là ký ức xưa mà trở thành niềm tự hào sống động.</p>
+            <img src="/assets/images/08h.jpg" alt="imgs">
+            <p style="font-size: 16px; font-style: italic; text-align: center;">Lễ hội Việt phục Bách Hoa Bộ Hành.</p>
+        </div>
+
+        <div class="about-slogan">
+            <h1 class="about-slogan">Di sản không chỉ để ngắm – mà để sống cùng</h1>
+        </div>
+        <div class="about-content">
+            <p class="about-content">Chúng tôi tin rằng văn hóa chỉ thực sự trường tồn khi nó được sống cùng con người
+                hôm nay. Cổ phục Việt không chỉ là kho tư liệu, mà còn là lời mời gọi mỗi người gìn giữ, trải nghiệm, và
+                lan tỏa di sản quý báu này đến cộng đồng.</p>
+            <img src="/assets/images/06h.jpg" alt="imgs">
+            <p style="font-size: 16px; font-style: italic; text-align: center;">Diễu hành Việt phục Bách Hoa Bộ Hành.</p>
+        </div>
+
+        <div class="end-about">
+            <h1
+                style="text-align: center; color: #5b141d; font-style: italic; padding: 50px 0 50px 0; border: 5px solid #5b141d;  margin: 0px 100px 20px 100px;">
+                "Văn hóa còn thì dân
+                tộc còn, văn hóa mất thì dân tộc mất."</h1>
+        </div>
     </div>
     <div class="footer"></div>
 </body>
 
 <script>
     fetch("menu.html")
-    .then(response => response.text())
-    .then(data => {
-        document.querySelector(".menu").innerHTML = data;
-    });
+        .then(response => response.text())
+        .then(data => {
+            document.querySelector(".menu").innerHTML = data;
+        });
     fetch("footer.html")
-    .then(response => response.text())
-    .then(data => {
-        document.querySelector(".footer").innerHTML = data;
-    });
+        .then(response => response.text())
+        .then(data => {
+            document.querySelector(".footer").innerHTML = data;
+        });
 </script>
 
 </html>
