@@ -6,13 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cổ phục Việt: Thường dân</title>
     <link rel="stylesheet" href="menu.html">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+           
+        }
+
+        .trp {
+            text-align: center;
+        }
+
+        .ha img {
+            display: block;
+            /* margin: 10px auto; */
+            width: 600px;
+        }
+
+        .ha1, .ha2, .ha3 {
+            position: relative;
+            display: inline-block;
+            margin-left: 20px;
+            overflow: hidden;
+        }
+
+        /* .ha1 img {
+            display: block;
+            width: 600px;
+        } */
+
+        .cap {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 25px;
+        }
+
+        .ha1 img:hover, .ha2 img:hover, .ha3 img:hover {
+            transform: scale(1.04);
+           
+            
+        }
+
+        .ha1 img, .ha2 img, .ha3 img {
+            cursor: pointer; 
+            transition: transform 0.4s ease-in-out ;
+        }
+    </style>
 </head>
 
 <body>
     <div class="menu"></div>
     
     <div class="content">
-        <h1>Trang phục thường dân</h1>
+
+        <div class="trp">
+            <h1>Y phục dân gian</h1>
+        </div>
+        
+        <div class="ha">
+            <div class="ha1">
+                <img src="assets/images/e2b55546b7dc2279cfd8d677f36fcbc6.jpg" alt="" width="600">
+                <div class="cap"><p>Áo Tứ Thân</p></div>
+            </div>
+
+            <div class="ha2">
+                 <img src="assets/images/e9e0ebf7e86242cb7391f5564c689588.jpg" alt="" width="600">
+                <div class="cap"><p>Áo Yếm</p></div>
+            </div>
+
+            <div class="ha3">
+                <img src="assets/images/6b7b7697e74ba013c79fa5f5f49bbba2.jpg" alt="" width="600">
+                <div class="cap"><p>Áo Ngũ Thân Tay Chẽn</p></div>
+            </div>
+        </div>  
     </div>
 
     <div class="footer"></div>
