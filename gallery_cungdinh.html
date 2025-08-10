@@ -6,15 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cổ phục Việt: Cung đình</title>
     <link rel="stylesheet" href="menu.html">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* căn giữa các khung hình theo chiều ngang */
+        }
+
+        .tpcd {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 25px;
+        }
+
+        .h1, .h2, .h3, .h4 {
+            width: 700px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .h1 img, .h2 img, .h3 img, .h4 img {
+            display: block;
+            width: 800px;
+            height: auto;
+            margin: 0 auto;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .cp {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 700px;
+            box-sizing: border-box;
+            font-size: 27px;
+        }
+
+        .h1 img:hover, .h2 img:hover, .h3 img:hover, .h4 img:hover {
+            cursor: pointer;
+            transform: scale(1.04);
+        }
+
+
+    </style>
 </head>
 
 <body>
     <div class="menu"></div>
 
     <div class="content">
-        <h1>Trang phục cung đình</h1>
-        <img src="assets/images/b274131f798f8e56e3be956e775af5d3.jpg" alt="" width="500">
-        <img src="assets/images/6225a8d4e5efac517c2c236c3e17f69d.jpg" alt="" width="500">
+        <div class="tpcd">
+            <h1>Hoàng phục - quan lại</h1>
+        </div>
+
+        <div class="h1">
+            <img src="assets/images/b274131f798f8e56e3be956e775af5d3.jpg" alt="">
+            <div class="cp"><p>Áo Tấc</p></div>
+        </div>
+
+        <div class="h2">
+            <img src="assets/images/6225a8d4e5efac517c2c236c3e17f69d.jpg" alt="">
+            <div class="cp"><p>Nhật Bình</p></div>
+        </div>
+
+        <div class="h3">
+            <img src="assets/images/d75d98f0bacc9fdfdd72f5f813edbbb4.jpg" alt="">
+            <div class="cp"><p>Áo quan viên</p></div>
+        </div>
+
+        <div class="h4">
+            <img src="assets/images/e36778b90eb2a79ff5552df831b6d8ea.jpg" alt="">
+            <div class="cp"><p>Áo Phụng Bào</p></div>
+        </div>
+        
+        
+        
     </div>
 
     <div class="footer"></div>
