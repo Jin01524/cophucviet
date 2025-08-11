@@ -97,11 +97,73 @@
             transition: all 1s ease;
         }
 
+        .image-content {
+            margin-bottom: 60px;
+        }
+
         .image-content img {
             padding-left: 25%;
             margin-top: 10px;
             width: 50%;
             height: auto;
+        }
+
+        .unit-box {
+            justify-content: center;
+            border-spacing: 0;
+            margin: 0 10%;
+            width: 80%;
+            height: auto;
+            margin-bottom: 50px;
+        }
+
+        .unit-box tr td {
+            height: 150px;
+            padding: 25px;
+            background-color: #f3efe2;
+            color: #5b141d;
+        }
+
+        .unit-box tr td p {
+            margin: 0;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        .unit-logo {
+            width: 15%;
+            height: auto;
+        }
+
+        .unit-box tr td img {
+            width: 90%;
+            height: auto;
+        }
+
+        .unit-box tr {
+            cursor: pointer;
+            transition: all 0.1s ease;
+        }
+
+        .unit-box tr:hover {
+            outline: 5px solid #921b2b;
+            scale: 1.03;
+        }
+
+        .unit-box tr td img {
+            transition: all 0.3s ease;
+        }
+
+        .unit-box tr td img:hover {
+            scale: 1.2;
+        }
+
+        .unit-box tr td a img {
+            transition: all 0.3s ease;
+        }
+
+        .unit-box tr td a:hover img {
+            scale: 1.4;
         }
     </style>
 </head>
@@ -125,7 +187,7 @@
         <div class="discovery-container">
             <table>
                 <tr>
-                    <td style="background-color: #5b141d; color: white;">
+                    <td style="background-color: #5b141d; color: #f3efe2;">
                         <h1>Khám Phá</h1>
                     </td>
                     <td><a href="/gallery_cungdinh.html">
@@ -151,9 +213,99 @@
             <p style="font-style: italic; padding-left: 25%; width: 50%; font-size: 15px; text-align: center;">Bên trong
                 phòng trưng bày của Great Vietnam tại Hà Nội.</p>
         </div>
-    </div>
 
-    <div class="footer"></div>
+        <div style="text-align: center;
+            color: wheat;
+            background-color: #5b141d;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); margin-bottom: 50px;">
+            <div style="border: 2px solid wheat;">
+                <h2>Các đơn vị tiêu biểu mang lại dấu ấn cổ phục Việt</h2>
+            </div>
+        </div>
+        <table class="unit-box">
+            <tr>
+                <td class="unit-logo">
+                    <img src="assets/images/logo_ctdvq.png" alt="logo_ctdvq">
+                </td>
+                <td>
+                    <h2>Cổ Trang Đại Việt Quán</h2>
+                </td>
+                <td>
+                    <p>Cổ Trang Đại Việt Quán được thành lập năm 2019 - Giữ gìn giá trị văn hóa của một thời vàng son là
+                        tôn chỉ hàng đầu của CTĐVQ trong việc hình thành và phát triển thương hiệu cổ phục Việt.
+                        Lưu giữ giá trị văn hóa truyền thống qua trang phục.
+                        Đồng hành cùng bạn trong những khoảnh khắc rực rỡ.
+                        Chỉn chu trong từng chi tiết.</p>
+                </td>
+                <td style="width: 5%; padding: 0; background-color: #921b2b;">
+                    <a href="https://cotrangdaivietquan.com/">
+                        <div style="height: 100%; align-items: center; display: flex; justify-content: center;">
+                            <img style="width: 40%;" src="assets/images/link.png" alt="">
+                        </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td class="unit-logo">
+                    <img src="assets/images/logo_vietstyle.jpg" alt="logo_vietstyle">
+                </td>
+                <td>
+                    <h2>V'style - Việt cổ phục</h2>
+                </td>
+                <td>
+                    <p>Hoạt động với mục tiêu đưa những hoa văn, trang phục theo phong cách Việt xưa trở lại phổ biến
+                        hơn trong đời sống.</p>
+                </td>
+                <td style="width: 5%; padding: 0; background-color: #921b2b;">
+                    <a href="https://vietphuc.net/">
+                        <div style="height: 100%; align-items: center; display: flex; justify-content: center;">
+                            <img style="width: 40%;" src="assets/images/link.png" alt="">
+                        </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td class="unit-logo">
+                    <img src="assets/images/logo-dvph.png" alt="logo-dvph">
+                </td>
+                <td>
+                    <h2>Đại Việt Phong Hoa</h2>
+                </td>
+                <td>
+                    <p>Là một nhóm nghiên cứu và phục dựng cổ phục Việt Nam, với mong muốn tìm hiểu và quảng bá những
+                        giá trị văn hóa truyền thống của dân tộc, đặc biệt là trang phục cổ</p>
+                </td>
+                <td style="width: 5%; padding: 0; background-color: #921b2b;">
+                    <a href="https://www.facebook.com/Daivietphonghoa/">
+                        <div style="height: 100%; align-items: center; display: flex; justify-content: center;">
+                            <img style="width: 40%;" src="assets/images/link.png" alt="">
+                        </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td class="unit-logo">
+                    <img src="assets/images/logo_greatvn.png" alt="logo-dvph">
+                </td>
+                <td>
+                    <h2>Great Việt Nam</h2>
+                </td>
+                <td>
+                    <p>Great Vietnam được vận hành bởi những bạn trẻ yêu thích văn hóa, sáng tạo; cùng theo đuổi một
+                        hoài bão là tái hiện vẻ đẹp của cổ phục Việt một cách chuẩn xác nhất có thể.</p>
+                </td>
+                <td style="width: 5%; padding: 0; background-color: #921b2b;">
+                    <a href="https://www.facebook.com/gr8vietnam?locale=vi_VN">
+                        <div style="height: 100%; align-items: center; display: flex; justify-content: center;">
+                            <img style="width: 40%;" src="assets/images/link.png" alt="">
+                        </div>
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+        <div class="footer"></div>
 </body>
 
 <script>
