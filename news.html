@@ -8,32 +8,204 @@
     <link rel="stylesheet" href="menu.html">
 
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #faf4ef;
+            margin: 0;
+            padding: 0;
+        }
 
+        .news-section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            color: #5b141d;
+            margin-bottom: 30px;
+        }
+
+        .news-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .news-item {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .news-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .news-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #5b141d;
+            color: white;
+            border-radius: 5px;
+            margin: 20px 10%;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background-color: #5a3c26;
+            text-decoration: none;
+        }
+
+        .news-content {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .news-date {
+            font-size: 0.9em;
+            color: #888;
+            margin-bottom: 8px;
+        }
+
+        .news-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #5a3e2b;
+            margin-bottom: 10px;
+        }
+
+        .news-desc {
+            font-size: 0.95em;
+            color: #555;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        .detail-button {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #5a3e2b;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+            margin-top: auto;
+            text-align: center;
+        }
+
+        .detail-button:hover {
+            background-color: #7c5440;
+        }
+
+        @media (max-width: 600px) {
+            .news-title {
+                font-size: 1em;
+            }
+
+            .news-desc {
+                font-size: 0.9em;
+            }
+
+            .detail-button {
+                width: 100%;
+                text-align: center;
+
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="menu"></div>
+    <div id="menu"></div>
+    <section class="news-section">
+        <h2 class="section-title">Tin tức & Sự kiện</h2>
+        <div class="news-list">
 
-    <div class="content">
-        <h1>Tin tức</h1>
-    </div>
+            <div class="news-item">
+                <img src="/assets/images/trienlam.jpg" alt="Triển lãm Cổ Phục Việt Nam 2025">
+                <div class="news-content">
+                    <div class="news-date"> 24/3/2024, 12:41 </div>
+                    <div class="news-title">Triển lãm Cổ Phục Việt Nam 2025.
 
+                    </div>
+                    <div class="news-desc">
+                        Ngày hội mang chủ đề "Tóc xanh vạt áo" lần thứ 4 nhằm giữ gìn, tôn vinh trang phục truyền thống
+                        của người Việt. Chương trình thu hút gần 30 gian hàng, quy mô gần gấp đôi năm ngoái, dự kiến thu
+                        hút gần 2.000 người.
+                    </div>
+                    <a href="https://vnexpress.net/hang-nghin-nguoi-tham-gia-ngay-hoi-co-phuc-viet-4725988.html"
+                        class="detail-button">Xem chi tiết</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <img src="/assets/images/hoithao.jpg" alt="Hội thảo nghiên cứu cổ phục">
+                <div class="news-content">
+                    <div class="news-date">07/04/2025 12:45</div>
+                    <div class="news-title">Hội thảo nghiên cứu cổ phục Việt</div>
+                    <div class="news-desc">
+                        Tại Hội thảo, các chuyên gia, các nhà sử học, các nhà nghiên cứu đã tập trung trao đổi, phân
+                        tích, làm rõ một số vấn đề về trang phục, cổ phục như: bộ giáp trụ, binh sĩ và tướng lĩnh thời
+                        Đinh-Tiền Lê; phục trang, tập quán dân thường thời Đinh; trang phục Thái hậu Dương Vân Nga, Vua
+                        Đinh Tiên Hoàng, Vua Lê Đại Hành; phỏng dựng trang phục áo viên lĩnh đại khâm.
+                    </div>
+                    <a href="https://thethaovanhoa.vn/tham-van-y-kien-chuyen-gia-ve-trang-phuc-co-thoi-dinh-20250407124544677.htm"
+                        class="detail-button">Xem chi tiết</a>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <img src="/assets/images/lehoi.jpg" alt="Lễ hội văn hóa truyền thống">
+                <div class="news-content">
+                    <div class="news-date"> 13/06/2025 </div>
+                    <div class="news-title">Lễ hội văn hoá truyền thống</div>
+                    <div class="news-desc">
+                        Khám phá lễ hội truyền thống Việt Nam rực rỡ với múa rối nước , áo dài, áo tứ thân, áo bà ba và
+                        nhiều hoạt động văn hoá đặc sắc khác. Tham gia các trò chơi dân gian, thưởng thức ẩm thực truyền
+                        thống và trải nghiệm không khí lễ hội đậm đà bản sắc dân tộc.
+                    </div>
+                    <a href="https://ezcomclass.com/le-hoi-truyen-thong-viet-nam-2025/" class="detail-button">Xem chi
+                        tiết</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <a href="index.html" class="back-button">← Quay về</a>
     <div class="footer"></div>
+    <script>
+        fetch("menu.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("menu").innerHTML = data);
+        fetch("menu.html")
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector(".menu").innerHTML = data;
+            });
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector(".footer").innerHTML = data;
+            });
+    </script>
 </body>
-
-<script>
-
-    fetch("menu.html")
-        .then(response => response.text())
-        .then(data => {
-            document.querySelector(".menu").innerHTML = data;
-        });
-    fetch("footer.html")
-        .then(response => response.text())
-        .then(data => {
-            document.querySelector(".footer").innerHTML = data;
-        });
-</script>
 
 </html>

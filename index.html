@@ -52,13 +52,6 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
 
-        .discovery-container {
-            color: #5b141d;
-            background-color: white;
-            border: 2px solid #5b141d;
-            display: flex;
-        }
-
         .discovery-container table {
             width: 100%;
             height: 200px;
@@ -67,34 +60,80 @@
             text-decoration: none;
         }
 
+        .discovery-container table tr td a {
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
         .discovery-container td {
             vertical-align: middle;
             width: 25%;
-            height: 200px;
+        }
+
+        .discovery-container .discovery-item {
+            background-color: whitesmoke;
+            padding: 150px 30px 0 30px;
+            border: 5px solid #5b141d;
+            height: 720px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .discovery-container table tr td:hover .discovery-item {
+            opacity: 1;
         }
 
         .discovery-container a {
             text-decoration: none;
             color: #5b141d;
-            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        .h3 {
+        .discovery-container table tr td a h2 {
+            opacity: 0;
+            width: 100%;
+            height: 200px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.5s ease;
+        }
+
+        .discovery-container table tr td:hover a h2 {
+            opacity: 1;
+        }
+
+        .discovery-container table tr td a p {
+            opacity: 0;
             margin: 0;
-            height: 100%;
-            padding: 0 50px 0 50px;
-            display: flex;
+            text-align: center;
             align-items: center;
             justify-content: center;
+            transition: opacity 0.5s ease;
         }
 
-        .discovery-container a:hover h3 {
-            color: white;
-            background-color: #5b141d;
-            transition: all 1s ease;
+        .discovery-container table tr td:hover a p {
+            opacity: 1;
+        }
+
+        .discovery-container table tr td a img {
+            opacity: 0;
+            margin: 0;
+            height: 200px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.5s ease;
+        }
+
+        .discovery-container table tr td:hover a img {
+            opacity: 1;
         }
 
         .image-content {
@@ -189,15 +228,45 @@
                     <td style="background-color: #5b141d; color: #f3efe2;">
                         <h1>Khám Phá</h1>
                     </td>
-                    <td><a href="/gallery_cungdinh.html">
-                            <h3 class="h3">Cổ phục Cung Đình</h3>
-                        </a></td>
-                    <td><a href="/gallery_thuongdan.html">
-                            <h3 class="h3">Cổ phục Thường Dân</h3>
-                        </a></td>
-                    <td><a href="/gallery_nghile.html">
-                            <h3 class="h3">Cổ phục Nghi Lễ</h3>
-                        </a></td>
+                    <td style="background: url('assets/images/5802b2cabeb676adcb924b4c1e20d1bf.jpg');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;">
+                        <a href="/vienlinh.html">
+                            <div class="discovery-item">
+                                <img src="assets/images/logo_cophucviet.png" alt="">
+                                <h2 style="display: flex;">Áo Viên Lĩnh</h2>
+                                <p>"Áo dài viên lĩnh không chỉ là một trang phục, mà còn là một phần hồn của văn hóa
+                                    Việt
+                                    Nam"</p>
+                            </div>
+                        </a>
+                    </td>
+                    <td style="background: url('assets/images/0e687deef412f7be2097348a8c085794.jpg');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;">
+                        <a href="/giaolinh.html">
+                            <div class="discovery-item">
+                                <img src="assets/images/logo_cophucviet.png" alt="">
+                                <h2 style="display: flex;">Áo Giao Lĩnh</h2>
+                                <p>"Áo giao lĩnh là một kiểu áo xuất hiện từ thời nhà Lý với đặc trưng phần cổ áo đan chéo, giao nhau."</p>
+                            </div>
+                        </a>
+                    </td>
+                    <td style="background: url('assets/images/b274131f798f8e56e3be956e775af5d3.jpg');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    width: 25%;">
+                        <a href="/gallery_cungdinh.html">
+                            <div class="discovery-item">
+                                <img src="assets/images/logo_cophucviet.png" alt="">
+                                <h2 style="display: flex;">Áo Tấc</h2>
+                                <p>"Áo tấc không chỉ là trang phục mang tính thẩm mỹ cao, mà còn là biểu tượng của sự trang nghiêm, tôn kính và giữ gìn giá trị văn hóa truyền thống Việt Nam."</p>
+                            </div>
+                        </a>
+                    </td>
                 </tr>
             </table>
 
