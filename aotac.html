@@ -1,0 +1,131 @@
+<html lang="vn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <link rel="stylesheet" href="menu.html">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            /* border: 6px solid #621111; */
+            padding: 20px;
+        }
+        
+        .h1 {
+            display: flex;
+            background: #98a6a9;
+            
+        }
+        .h2 {
+            background: #d5c4bc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        .h1 img {
+            width: 400px;
+            margin-right: 200px;
+            margin-left: 242px;
+        }
+        .h2 img {
+            width: 600px;
+            /* border: 4px solid #af858b; */
+            margin: 0;
+        }
+
+        .head {
+            margin-top: 25%;
+            text-align: center;
+            width: 600px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .h1-text {
+            width: 600px;
+        }
+        .h2-text {
+            /* border: 4px solid #000000; */
+            width: 60%;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        .doan {
+            font-size: 17px;
+            text-align: center;
+            font-style: italic;
+            margin-top: 20px;
+        }
+        .doan1 {
+            /* border: #000000 2px solid; */
+            width: 750px;
+            line-height: 22px;
+            text-align: justify;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu"></div>
+    <div class="content">
+        <div class="h1">
+            <img src="assets/images/abba12d98bd103aabd31551c7dc062ea.jpg" alt="">
+            <div class="h1-text">
+                <div class="head">Áo Tấc</div>
+                <div class="doan">Áo tấc hay còn gọi là áo ngũ thân tay thụng, là một loại lễ phục trang trọng dưới thời Nguyễn. Gọi là áo tấc vốn bắt nguồn từ phần viền áo 
+                    rộng đúng một tấc và có phần tay dài khoảng 30-50cm, tà áo thường dài không quá gối 10cm. Áo tấc không chỉ là trang phục mang tính thẩm mỹ cao, mà còn là
+                     biểu tượng của sự trang nghiêm, tôn kính và giữ gìn giá trị văn hóa truyền thống Việt Nam.
+                </div>
+            </div>
+        </div>
+        <div class="h2">
+            
+            <div class="h2-text">
+                <div class="doan1">Áo tấc dành cho cả hai giới nam và nữ, không phân biệt sang hèn dành cho mọi tầng lớp trong xã hội. Ngày xưa, tùy vào 
+                    điều kiện hay kinh tế của người mặc mà áo tấc có thể được may bằng các chất liệu khác nhau nhưng vẫn trang trọng, lịch sự. Cũng giống như 
+                    áo ngũ thân tay chẽn, thân áo tấc cũng có năm mảnh vải được ghép lại với nhau tượng trưng cho "tứ thân phụ mẫu" và bản thân người mặc.
+
+                    <div class="doan2">
+                        Ngoài ra, áo tấc còn có năm nút áo tượng trưng cho ngũ thường, năm phẩm chất quan trọng của người quân tử là: Nhân, lễ, nghĩa, trí, tín. Nhân là lòng thương người biết giúp đỡ 
+                        và chia sẻ. Lễ là lễ phép, biết kính trên nhường dưới. Nghĩa là nghĩa hiệp, chính trực không làm điều trái đạo lý. Trí là trí tuệ 
+                        có học thức và hiểu biết. Tín là có chữ tín, giữ uy tín, nói được làm được. Và ngũ luân, 5 mối quan hệ trong xã hội xưa (quân thần: vua - tôi, phụ tử: cha - con,
+                        phu phụ: chồng - vợ, huynh đệ: anh - em, bằng hữu: bạn bè).
+                    </div>
+
+                    <div class="doan3">
+                        Cũng là một loại của áo ngũ thân nhưng tay thụng. Khác với ngũ thân tay chẽn có thể sử dụng hàng ngày thì áo tấc thường chỉ dùng trong các dịp nghi lễ, 
+                        cưới hỏi, tế, ngày Tết,...
+                    </div>
+                </div>
+               
+            </div>
+            <div><img src="assets/images/6d2ed52a30299db747fcb8c56f44c751.jpg" alt=""></div>
+        </div>
+    </div>
+    <div class="footer"></div>
+
+    <script>
+        fetch("menu.html")
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector(".menu").innerHTML = data;
+            });
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector(".footer").innerHTML = data;
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<html lang="vn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <link rel="stylesheet" href="menu.html">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            /* border: 6px solid #621111; */
+            padding: 20px;
+        }
+        
+        .h1 {
+            display: flex;
+            background: #98a6a9;
+            
+        }
+        .h2 {
+            background: #d5c4bc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        .h1 img {
+            width: 400px;
+            margin-right: 200px;
+            margin-left: 242px;
+        }
+        .h2 img {
+            width: 600px;
+            /* border: 4px solid #af858b; */
+            margin: 0;
+        }
+
+        .head {
+            margin-top: 25%;
+            text-align: center;
+            width: 600px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .h1-text {
+            width: 600px;
+        }
+        .h2-text {
+            /* border: 4px solid #000000; */
+            width: 60%;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        .doan {
+            font-size: 17px;
+            text-align: center;
+            font-style: italic;
+            margin-top: 20px;
+        }
+        .doan1 {
+            /* border: #000000 2px solid; */
+            width: 750px;
+            line-height: 22px;
+            text-align: justify;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu"></div>
+    <div class="content">
+        <div class="h1">
+            <img src="assets/images/9f33a940c341ee0aa15f5d0e5be50dbc.jpg" alt="">
+            <div class="h1-text">
+                <div class="head">Nhật Bình</div>
+                <div class="doan">Nhật bình là một loại trang phục truyền thống Việt Nam là biểu tượng của người phụ nữ Kinh Bắc xưa, tôn vinh vẻ đẹp mộc mạc, giản dị nhưng lại rất duyên dáng đồng thời ca ngợi đức tính cần cù, chăm chỉ của phụ nữ thời xưa.</div>
+            </div>
+        </div>
+        <div class="h2">
+            
+            <div class="h2-text">
+                <div class="doan1">Nhật bình xuất hiện từ rất sớm khoảng thế kỷ 17-18, là một loại trang phục mặc thường ngày của phụ nữ miền Bắc Việt Nam xưa.Về nguồn gốc, 
+                    chẳng ai biết áo tứ thân xuất hiện từ khi nào, chỉ biết rằng nó đã có từ thời xa xưa bởi có một nhà khảo cổ đã tìm thấy hình ảnh của áo tứ thân trên mặt 
+                    trống đồng cách đây hàng nghìn năm.
+                    <div class="doan2" style="margin-bottom: 20px;">Nhật bình còn mang một ý nghĩa sâu sắc về văn hóa, thể hiện sự tôn trọng và yêu thương của người phụ nữ đối với gia đình và xã hội.
+                        Phía trước áo có hai tà tượng trưng cho cha mẹ đẻ, hai tà sau tượng trưng cho cha mẹ chồng. Áo yếm mặc bên trong tượng trưng
+                        cho hình ảnh cha mẹ đang ôm ấp, che chở cho con cái của mình trong lòng. Hai tà trước buộc vào nhau cũng đồng thời tượng trưng cho 
+                        tình cảm vợ chồng quấn quýt, thủy chung và gắn bó.
+                    </div>
+                    <div class="doan3" style="font-style: italic;">
+                        "Nào đâu cái áo tứ thân?
+                        <br>Cái khăn mỏ quạ, cái quần nái đen?"
+                        <br>(Chân quê - Nguyễn Bính)
+                    </div>
+                </div>
+               
+            </div>
+            <div><img src="assets/images/9d532f5ebe6f7bf1b84b7f69553790ba.jpg" alt=""></div>
+        </div>
+    </div>
+    <div class="footer"></div>
+
+    <script>
+        fetch("menu.html")
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector(".menu").innerHTML = data;
+            });
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector(".footer").innerHTML = data;
+            });
+    </script>
+</body>
+</html>
