@@ -16,6 +16,22 @@
         padding: 0 20px;
     }
 
+    @media (max-width: 720px) {
+        .site-footer-content {
+            grid-template-columns: 1fr;
+            gap: 30px;
+            padding: 0 15px;
+        }
+
+        .site-footer-section {
+            text-align: center;
+        }
+
+        .site-footer-social {
+            justify-content: center;
+        }
+    }
+
     .site-footer-section {
         padding: 15px;
     }
@@ -119,9 +135,9 @@
             </ul>
         </div>
 
-        <div class="site-footer-content">
-            <a href="https://sdc.udn.vn/"><img style="width: 80%;" src="assets/images/logo_sdcDanang.png" alt="sdc_Danang"></a>
-            <a href="https://dau.edu.vn/"><img style="width: 80%;" src="assets/images/Logo_dhktdn.png" alt="udn"></a>
+        <div class="site-footer-logos" style="display: flex; justify-content: center; gap: 20px; margin-top: 30px;">
+            <a href="https://sdc.udn.vn/"><img style="max-width: 150px; width: 100%;" src="assets/images/logo_sdcDanang.png" alt="sdc_Danang"></a>
+            <a href="https://dau.edu.vn/"><img style="max-width: 150px; width: 100%;" src="assets/images/Logo_dhktdn.png" alt="udn"></a>
         </div>
     </div>
 
