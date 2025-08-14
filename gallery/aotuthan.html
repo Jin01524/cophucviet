@@ -80,7 +80,7 @@
     <div class="menu"></div>
     <div class="content">
         <div class="h1">
-            <img src="/assets/images/e2b55546b7dc2279cfd8d677f36fcbc6.jpg" alt="">
+            <img src="/cophucviet/assets/images/e2b55546b7dc2279cfd8d677f36fcbc6.jpg" alt="">
             <div class="h1-text">
                 <div class="head">Áo Tứ Thân</div>
                 <div class="doan">Áo tứ thân là một loại trang phục truyền thống Việt Nam là biểu tượng của người phụ nữ Kinh Bắc xưa. Chiếc áo không chỉ 
@@ -109,18 +109,18 @@
                 </div>
                
             </div>
-            <div><img src="/assets/images/9d532f5ebe6f7bf1b84b7f69553790ba.jpg" alt=""></div>
+            <div><img src="/cophucviet/assets/images/9d532f5ebe6f7bf1b84b7f69553790ba.jpg" alt=""></div>
         </div>
     </div>
     <div class="footer"></div>
 
     <script>
-        fetch("/menu.html")
+        fetch("menu.html")
             .then(response => response.text())
             .then(data => {
                 document.querySelector(".menu").innerHTML = data;
             });
-        fetch("/footer.html")
+        fetch("footer.html")
             .then(response => response.text())
             .then(data => {
                 document.querySelector(".footer").innerHTML = data;
