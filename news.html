@@ -195,11 +195,6 @@
         fetch("menu.html")
             .then(res => res.text())
             .then(data => document.getElementById("menu").innerHTML = data);
-        fetch("menu.html")
-            .then(response => response.text())
-            .then(data => {
-                document.querySelector(".menu").innerHTML = data;
-            });
         fetch("footer.html")
             .then(response => response.text())
             .then(data => {
